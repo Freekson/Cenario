@@ -244,13 +244,13 @@ main .text-image-block .block {
   justify-content: space-between;
   align-items: center;
   margin-top: 5%;
-  width: 90%;
+  width: 80%;
 }
 main .text-image-block .block img {
-  width: 45%;
+  width: 40%;
 }
 main .text-image-block .block .text {
-  width: 40%;
+  width: 45%;
 }
 main .text-image-block .block .text h5 {
   font-size: 48px;
@@ -277,4 +277,103 @@ main .text-image-block h4 {
   font-weight: normal;
   font-size: 32px;
   margin: 6% 0 0;
+}
+main .article {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+main .article h4 {
+  font-size: 48px;
+  font-weight: normal;
+  color: #5E4DCC;
+  margin-bottom: 1%;
+}
+main .article p {
+  color: #69698F;
+  margin-top: 0;
+}
+main .article h5 {
+  font-weight: normal;
+  color: #5E4DCC;
+  font-size: 31px;
+}
+main .icons-block {
+  display: flex;
+  justify-content: space-around;
+}
+main .icons-block .block {
+  flex-basis: 20%;
+  text-align: center;
+}
+main .icons-block .block .icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+main .icons-block .block .icon img {
+  position: absolute;
+  width: 46px;
+  left: 43%;
+  top: 35px;
+  z-index: 3;
+}
+main .icons-block .block .icon .purpule-block {
+  background-color: #5E4DCC;
+  position: absolute;
+}
+main .icons-block .block .icon .pink-block {
+  background-color: #FFD1DD;
+  position: absolute;
+  z-index: 5;
+}
+main .icons-block .block .header {
+  color: #5E4DCC;
+  margin-top: 150px;
+  font-size: 20px;
+}
+main .icons-block .block .text {
+  color: #69698F;
+  font-style: 18px;
+  line-height: 27.2px;
+}
+main .icons-block .block:nth-child(1) .icon .purpule-block {
+  top: 60px;
+  width: 120px;
+  height: 60px;
+}
+main .icons-block .block:nth-child(1) .icon .pink-block {
+  top: 0;
+  width: 120px;
+  height: 60px;
+}
+main .icons-block .block:nth-child(2) .icon .purpule-block {
+  width: 60px;
+  height: 120px;
+  right: 30.5%;
+}
+main .icons-block .block:nth-child(2) .icon .pink-block {
+  width: 60px;
+  height: 120px;
+  right: 50%;
+}
+main .icons-block .block:nth-child(3) .icon .purpule-block {
+  top: 0px;
+  width: 120px;
+  height: 60px;
+}
+main .icons-block .block:nth-child(3) .icon .pink-block {
+  top: 60px;
+  width: 120px;
+  height: 60px;
+}
+main .icons-block .block:nth-child(4) .icon .purpule-block {
+  width: 60px;
+  height: 120px;
+  right: 50%;
+}
+main .icons-block .block:nth-child(4) .icon .pink-block {
+  width: 60px;
+  height: 120px;
+  right: 30.5%;
 }
