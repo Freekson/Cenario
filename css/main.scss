@@ -1,11 +1,26 @@
 $header-color: #FF4D7B;
 $text-color: #5E4DCC;
 $first-background-color:#FFD1DD;
+$footer-color: #35288B;
 
 body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+}
+body::-webkit-scrollbar{
+    background-color:$text-color;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: $first-background-color;
+    border: 1px solid $footer-color;
+    border-radius: 5px;
+}
+body::-webkit-scrollbar-track{
+    background: $text-color;
+}
+body::-webkit-scrollbar-button{
+    display: none;
 }
 aside{
     background-color: $header-color;
@@ -88,6 +103,39 @@ header{
     }
 }
 main{
+    form{
+        margin-top: 3%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        input{
+            height: 58px;
+            width: 229px;
+            color: $text-color;
+            border-radius: 5px;
+            margin-right: 1%;
+            border: 2px solid #ebebec;
+            padding-left: 10px;
+            
+        }
+        ::placeholder{
+            color: $text-color;
+            font-size: 15px;
+            padding-left: 10px;
+        }
+        input:focus{
+            border: 2px solid #ebebec;
+        }
+        button{
+            height: 64px;
+            width: 166px;
+            color: white;
+            font-weight: bold;
+            border: 2px solid #867ad9;
+            background-color: $text-color;
+            border-radius: 5px;
+        }
+    }
     .data-block{
         background-color: $first-background-color;
         display: flex;
@@ -108,39 +156,6 @@ main{
         p{
             color: $text-color;
             font-size: 19px;
-        }
-        form{
-            margin-top: 3%;
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            input{
-                height: 58px;
-                width: 229px;
-                color: $text-color;
-                border-radius: 5px;
-                margin-right: 1%;
-                border: 2px solid #ebebec;
-                padding-left: 10px;
-                
-            }
-            ::placeholder{
-                color: $text-color;
-                font-size: 15px;
-                padding-left: 10px;
-            }
-            input:focus{
-                border: 2px solid #ebebec;
-            }
-            button{
-                height: 64px;
-                width: 166px;
-                color: white;
-                font-weight: bold;
-                border: 2px solid #867ad9;
-                background-color: $text-color;
-                border-radius: 5px;
-            }
         }
         .smaller{
             font-size: 11px;
@@ -402,4 +417,105 @@ main{
             }
         }
     }
+    .sing-up-block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
+        .sing-up{
+            width: 80%;
+            background-color: $first-background-color;
+            border-radius: 10px;
+            padding: 2% 4%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .text-block{
+                width: 50%;
+                color: $text-color;
+                .header{
+                    font-size: 29px;
+                    margin-bottom: 0;
+                }
+                .text{
+                    font-size: 18px;
+                }
+            }
+            .form-content{
+                text-align: right;
+                form{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 2%;
+                }
+                .smaller{
+                    font-size: 11px;
+                    a{
+                        text-decoration: none;
+                        color: $text-color;
+                        font-weight: bold;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    background-color: $footer-color;
+    color: white;
+    margin-bottom: -1%;
+    padding-top: 10%;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .first-part{
+        display: flex;
+        justify-content: space-between;
+        .list{
+            flex-basis: 30%;
+            .header{
+                font-size: 12px;
+                margin-bottom: 10%;
+            }
+            ul{
+                list-style: none;
+                padding-left: 0;
+                font-size: 16px;
+                li{
+                    margin: 5% 0;
+                }
+            }
+        }
+        .list:first-child{
+            margin-left: 10%;
+        }
+    }
+    .second-part{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            font-size: 34px;
+            text-align: center
+        }
+        ul{
+            list-style: none;
+            text-align: center;
+            padding-left: 0;
+
+        }
+        .me{
+            margin-top: 5%;
+            margin-bottom: 1%;
+            color: gray;
+            a{
+                color: gray;
+                text-decoration: underline;
+            }
+        }
+    }
+
 }
