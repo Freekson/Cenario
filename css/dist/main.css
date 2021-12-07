@@ -4,6 +4,24 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  background-color: #5E4DCC;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFD1DD;
+  border: 1px solid #35288B;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #5E4DCC;
+}
+
+body::-webkit-scrollbar-button {
+  display: none;
+}
+
 aside {
   background-color: #FF4D7B;
   display: flex;
@@ -84,6 +102,38 @@ header .header-content .header-buttons a:last-child {
   margin-right: 50px;
 }
 
+main form {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+main form input {
+  height: 58px;
+  width: 229px;
+  color: #5E4DCC;
+  border-radius: 5px;
+  margin-right: 1%;
+  border: 2px solid #ebebec;
+  padding-left: 10px;
+}
+main form ::placeholder {
+  color: #5E4DCC;
+  font-size: 15px;
+  padding-left: 10px;
+}
+main form input:focus {
+  border: 2px solid #ebebec;
+}
+main form button {
+  height: 64px;
+  width: 166px;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #867ad9;
+  background-color: #5E4DCC;
+  border-radius: 5px;
+}
 main .data-block {
   background-color: #FFD1DD;
   display: flex;
@@ -105,38 +155,6 @@ main .data-block h4 {
 main .data-block p {
   color: #5E4DCC;
   font-size: 19px;
-}
-main .data-block form {
-  margin-top: 3%;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-main .data-block form input {
-  height: 58px;
-  width: 229px;
-  color: #5E4DCC;
-  border-radius: 5px;
-  margin-right: 1%;
-  border: 2px solid #ebebec;
-  padding-left: 10px;
-}
-main .data-block form ::placeholder {
-  color: #5E4DCC;
-  font-size: 15px;
-  padding-left: 10px;
-}
-main .data-block form input:focus {
-  border: 2px solid #ebebec;
-}
-main .data-block form button {
-  height: 64px;
-  width: 166px;
-  color: white;
-  font-weight: bold;
-  border: 2px solid #867ad9;
-  background-color: #5E4DCC;
-  border-radius: 5px;
 }
 main .data-block .smaller {
   font-size: 11px;
@@ -376,4 +394,104 @@ main .icons-block .block:nth-child(4) .icon .pink-block {
   width: 60px;
   height: 120px;
   right: 30.5%;
+}
+main .sing-up-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+main .sing-up-block .sing-up {
+  width: 80%;
+  background-color: #FFD1DD;
+  border-radius: 10px;
+  padding: 2% 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .sing-up-block .sing-up .text-block {
+  width: 50%;
+  color: #5E4DCC;
+}
+main .sing-up-block .sing-up .text-block .header {
+  font-size: 29px;
+  margin-bottom: 0;
+}
+main .sing-up-block .sing-up .text-block .text {
+  font-size: 18px;
+}
+main .sing-up-block .sing-up .form-content {
+  text-align: right;
+}
+main .sing-up-block .sing-up .form-content form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+main .sing-up-block .sing-up .form-content .smaller {
+  font-size: 11px;
+}
+main .sing-up-block .sing-up .form-content .smaller a {
+  text-decoration: none;
+  color: #5E4DCC;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+footer {
+  background-color: #35288B;
+  color: white;
+  margin-bottom: -1%;
+  padding-top: 10%;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer .first-part {
+  display: flex;
+  justify-content: space-between;
+}
+footer .first-part .list {
+  flex-basis: 30%;
+}
+footer .first-part .list .header {
+  font-size: 12px;
+  margin-bottom: 10%;
+}
+footer .first-part .list ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 16px;
+}
+footer .first-part .list ul li {
+  margin: 5% 0;
+}
+footer .first-part .list:first-child {
+  margin-left: 10%;
+}
+footer .second-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .second-part h2 {
+  font-size: 34px;
+  text-align: center;
+}
+footer .second-part ul {
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+}
+footer .second-part .me {
+  margin-top: 5%;
+  margin-bottom: 1%;
+  color: gray;
+}
+footer .second-part .me a {
+  color: gray;
+  text-decoration: underline;
 }
